@@ -27,7 +27,7 @@ body {
     gap: 70px;
     align-items: center;
     justify-content: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     padding-top: 100px;
 }
 
@@ -55,4 +55,22 @@ h1 {
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.712);
 }
 
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .countdown-container {
+        gap: 20px;
+        padding-top: 30px;
+    }
+
+    .big-text {
+        font-size: 2rem;
+    }
+
+    .countdown-container > * > span {
+        font-size: 1.2rem;
+    }
+}
 
